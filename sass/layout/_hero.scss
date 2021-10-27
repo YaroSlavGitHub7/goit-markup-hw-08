@@ -1,0 +1,40 @@
+.hero {
+  &__darkbg {
+    background: var(--dark-bg);
+    max-width: 1600px;
+    margin: auto;
+  }
+  &__imgbg {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/mainbackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    max-width: 1600px;
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 200px 0px;
+  }
+  &__title {
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+    color: var(--white-color);
+    text-align: center;
+  }
+  &__button {
+    margin-top: 30px;
+    padding: 0;
+  }
+}

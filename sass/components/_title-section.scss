@@ -1,0 +1,12 @@
+%title-section {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.works__title,
+.team__title,
+.client__title {
+  @extend%title-section;
+}

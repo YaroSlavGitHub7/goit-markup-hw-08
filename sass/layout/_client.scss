@@ -1,0 +1,29 @@
+.client__icons {
+  display: block;
+}
+.client__item {
+  width: 170px;
+  height: 92px;
+}
+.client__icons :not(:last-child) {
+  margin-right: 30px;
+}
+.client__link {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: rgba(175, 177, 184, 1);
+  transition-duration: 250ms;
+  transition-property: fill, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--object-color);
+    border-color: var(--object-color);
+  }
+}
