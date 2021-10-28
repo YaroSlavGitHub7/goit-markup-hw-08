@@ -3,6 +3,16 @@
   // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  /*mobil*/
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    background-color: teal;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-color: blueviolet;
+  }
 }

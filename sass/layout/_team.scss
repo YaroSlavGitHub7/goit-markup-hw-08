@@ -3,17 +3,22 @@
 }
 
 .team__card-set {
-  margin-left: -30px;
-  margin-top: -50px;
+  /*mobil*/
+  // margin-left: -30px;
+  margin-top: -20px;
+  // margin-top: -50px;
 }
 .team__item {
-  margin-left: 30px;
-  margin-top: 50px;
+  /*mobil*/
+  width: 100%;
+  margin-top: 30px;
+  // margin-left: 30px;
+  // margin-top: 50px;
+  // width: 270px;
   background: var(--brand-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
 }
 .team__members {
   font-size: 16px;
@@ -24,7 +29,9 @@
 }
 .team__item--padding {
   padding-top: 30px;
-  padding-bottom: 30px;
+  /*mobil*/
+  padding-bottom: 24px;
+  // padding-bottom: 30px;
 }
 .team__name {
   font-size: 16px;
