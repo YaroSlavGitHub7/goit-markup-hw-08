@@ -1,7 +1,9 @@
 .hero {
   &__darkbg {
     background: var(--dark-bg);
-    max-width: 1600px;
+    /*mobil*/
+    width: 100%;
+    // max-width: 1600px;
     margin: auto;
   }
   &__imgbg {

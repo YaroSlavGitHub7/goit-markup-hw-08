@@ -13,6 +13,7 @@
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 h1,
@@ -235,7 +236,9 @@ nav a.menu__link--active {
 
 .hero__darkbg {
   background: var(--dark-bg);
-  max-width: 1600px;
+  /*mobil*/
+  width: 100%;
+  height: auto;
   margin: auto;
 }
 
