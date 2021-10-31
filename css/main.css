@@ -29,6 +29,12 @@ a {
   color: var(--black-color);
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 button {
   background-image: none;
 }
@@ -56,16 +62,16 @@ nav a.menu__link--active {
 
 .container {
   width: 100%;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
   /*mobil*/
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: teal;
+    background-color: yellowgreen;
   }
 }
 
@@ -73,6 +79,13 @@ nav a.menu__link--active {
   .container {
     width: 768px;
     background-color: blueviolet;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    background-color: green;
   }
 }
 
@@ -130,11 +143,11 @@ nav a.menu__link--active {
 .works__title,
 .team__title,
 .client__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  margin-bottom: 30px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .logo {
@@ -237,16 +250,17 @@ nav a.menu__link--active {
 .hero__darkbg {
   background: var(--dark-bg);
   /*mobil*/
-  width: 100%;
-  height: auto;
+  max-width: 1600px;
   margin: auto;
 }
 
 .hero__imgbg {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mainbackground.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/main_bg-mobOpt.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+  margin: 0 auto;
+  background-size: cover;
   max-width: 1600px;
 }
 
@@ -257,14 +271,14 @@ nav a.menu__link--active {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  padding: 200px 0px;
+  padding: 118px 0px;
 }
 
 .hero__title {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   letter-spacing: 0.06em;
-  line-height: 1.36;
+  line-height: calc(42 / 26);
   color: var(--white-color);
   text-align: center;
 }
@@ -454,15 +468,15 @@ nav a.menu__link--active {
 
 .client__icons {
   display: block;
+  justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .client__item {
-  width: 170px;
+  width: 210px;
+  margin: 15px;
   height: 92px;
-}
-
-.client__icons :not(:last-child) {
-  margin-right: 30px;
 }
 
 .client__link {
@@ -492,10 +506,13 @@ nav a.menu__link--active {
 
 /* элемент card-set работает только после блока client, иначе свойство flex не применяется*/
 .menu-button {
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+}
+
+.menu-button--marginRight {
+  margin-top: 15px;
 }
 
 .menu-button--marginRight:not(:last-child) {
@@ -534,20 +551,19 @@ nav a.menu__link--active {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100% - 3 * 30px) / 3);
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .portfolio-cards {
   display: flex;
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 100%;
+  justify-content: center;
   padding-top: 0 px;
   background: var(--brand-color);
-  width: 368px;
 }
 
 .portfolio-cards--link {
+  width: 100%;
+  justify-content: center;
   position: relative;
   transition-duration: 250ms;
   transition-property: box-shadow;
@@ -563,6 +579,9 @@ nav a.menu__link--active {
   position: relative;
   overflow: hidden;
   margin-bottom: -1px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
 .portfolio-cards__overlay {
@@ -619,12 +638,12 @@ footer {
 }
 
 .footer__flex {
-  display: flex;
   align-items: baseline;
-  margin-right: auto;
 }
 
 .logo__footer {
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
   color: var(--white-color);
 }
@@ -637,6 +656,8 @@ footer {
 }
 
 .footer-address__item {
+  display: flex;
+  justify-content: center;
   margin-bottom: 9px;
 }
 
@@ -645,14 +666,14 @@ footer {
 }
 
 .footer-address__item--colorgrey {
+  display: flex;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-social {
-  margin-left: 70px;
-}
-
 .footer-social__title {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -667,6 +688,8 @@ footer {
 }
 
 .footer-mailing__title {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -698,12 +721,7 @@ footer {
   color: var(--white-color);
 }
 
-.footer-button--marginleft {
-  margin-left: 8px;
-}
-
 .footer-button__send {
-  display: inline-flex;
   align-items: center;
 }
 
@@ -718,6 +736,8 @@ footer {
 }
 
 .socialicons--brand-color {
+  display: flex;
+  justify-content: center;
   fill: var(--brand-color);
 }
 

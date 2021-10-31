@@ -2,8 +2,8 @@
   &__darkbg {
     background: var(--dark-bg);
     /*mobil*/
-    width: 100%;
-    // max-width: 1600px;
+    // width: 100%;
+    max-width: 1600px;
     margin: auto;
   }
   &__imgbg {
@@ -12,10 +12,14 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../img/mainbackground.png);
+      url(../../img/main_bg-mobOpt.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+    // mobil
+    margin: 0 auto;
+    background-size: cover;
+
     max-width: 1600px;
   }
   &__section {
@@ -25,13 +29,15 @@
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    padding: 200px 0px;
+    padding: 118px 0px;
   }
   &__title {
-    font-size: 44px;
+    // mobil
+    font-size: 26px;
+    // font-size: 44px;
     font-weight: 900;
     letter-spacing: 0.06em;
-    line-height: 1.36;
+    line-height: calc(42 / 26);
     color: var(--white-color);
     text-align: center;
   }
