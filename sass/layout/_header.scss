@@ -38,6 +38,10 @@ header {
   fill: currentColor;
 }
 .nav {
+  @media screen and (max-width: 768px) {
+    height: 60px;
+    background-color: rgb(58, 12, 224);
+  }
   display: flex;
   align-items: center;
 }
@@ -45,6 +49,9 @@ nav a.menu__link--active {
   color: var(--object-color);
 }
 .menu__link {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   display: flex;
   position: relative;
   align-items: center;
@@ -53,9 +60,10 @@ nav a.menu__link--active {
 .menu__item--grey-color {
   color: var(--grey-color);
 }
-.menu__item:not(:last-child) {
-  margin-right: 50px;
-}
+// какой-то костыль,  можно использовать без нот
+// .menu__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 .menu__underline::after {
   content: "";
   display: block;
