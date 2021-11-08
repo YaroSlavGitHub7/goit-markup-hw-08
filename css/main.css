@@ -77,6 +77,26 @@ nav a.menu__link--active {
   transform: translateX(0);
 }
 
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
 .js-open-menu {
   width: 24px;
   height: 16px;
@@ -85,12 +105,13 @@ nav a.menu__link--active {
   justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
-  padding-left: 20px;
+  margin-right: 20px;
   cursor: pointer;
   border-color: transparent;
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-color: transparent;
   background-image: url(../img/mob/btn_mob_menu.svg);
 }
 
@@ -103,6 +124,17 @@ nav a.menu__link--active {
   .menu-toggle {
     display: none;
   }
+}
+
+.js-close-menu {
+  width: 19px;
+  height: 19px;
+  display: flex;
+  cursor: pointer;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .container {
@@ -265,7 +297,6 @@ header {
 @media screen and (max-width: 768px) {
   .nav {
     height: 60px;
-    background-color: #3a0ce0;
   }
 }
 
@@ -309,7 +340,7 @@ nav a.menu__link--active {
 }
 
 .hero__imgbg {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/main_bg-mobOpt.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main_bg_mobOpt.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
