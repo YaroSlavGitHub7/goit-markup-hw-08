@@ -66,9 +66,9 @@ nav a.menu__link--active {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 15px;
+  padding: 48px 40px;
   background-color: white;
-  z-index: 999;
+  z-index: 99;
   transition: transform 250ms ease-in-out;
 }
 
@@ -126,7 +126,6 @@ nav a.menu__link--active {
   align-items: center;
   justify-content: center;
   padding: 21px 25px;
-  outline: none;
   border-radius: 50%;
   cursor: pointer;
   border-color: transparent;
@@ -137,17 +136,24 @@ nav a.menu__link--active {
 .mobil-menu__btn-close {
   background-repeat: no-repeat;
   background-image: url(../img/mob/btn_close_19px.svg);
+  transition: background-image 250ms;
+}
+
+.js-close-menu:hover .mobil-menu__btn-close,
+.js-close-menu:focus .mobil-menu__btn-close {
+  background-image: url(../img/mob/btn_close_activ_19px.svg);
+  transition: background-image 250ms;
 }
 
 .mobile-menu {
   display: block;
   width: max-content;
-}
-
-.mobile-menu__link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
+}
+
+.mobile-menu__link {
   font-size: 40px;
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
@@ -155,12 +161,53 @@ nav a.menu__link--active {
   text-decoration: none;
   display: block;
   padding: 0px 25px;
-  margin-top: 32px;
+  margin-bottom: 32px;
+  transition-duration: 250ms;
+  transition-property: color, background-color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__link:hover,
 .mobile-menu__link:focus {
   color: var(--object-color);
+}
+
+.mobile-menu__contacts--bottom {
+  display: block;
+  margin-top: 70px;
+}
+
+.mobile-menu__contact {
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 0px 25px;
+  margin-bottom: 32px;
+}
+
+.mobile-menu__social--bottom {
+  display: inline-flex;
+  margin-top: 32px;
+}
+
+.mobile-menu__social {
+  display: flex;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: var(--object-color);
+  padding: 0px 10px;
+}
+
+.mobile-menu__social--line {
+  display: inline-flex;
+  width: 2px;
+  height: 22px;
+  background-color: #000;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .container {
