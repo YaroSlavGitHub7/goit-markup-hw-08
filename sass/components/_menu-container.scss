@@ -99,6 +99,7 @@
   text-decoration: none;
   display: block;
   margin-bottom: 32px;
+
   transition-duration: 250ms;
   transition-property: color, background-color, box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -106,6 +107,9 @@
 .mobile-menu__page:hover,
 .mobile-menu__page:focus {
   color: var(--object-color);
+  line-height: calc(47 / 43);
+
+  padding-bottom: 3px;
 }
 
 .mobile-menu__contact {

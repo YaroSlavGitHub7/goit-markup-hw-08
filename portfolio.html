@@ -34,6 +34,8 @@
                   +38 096 111 11 11</a>
               </li>
           </ul>
+          <!-- кнопка мобменю -->
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"></button>
     </div>
   </header>
   <main>
@@ -160,70 +162,104 @@
      </div>     
     </section>  
   </main>
-  <!-- <footer class=" footer footer__darkbg">
-    <div class="container footer__flex">
-      <div>
-        <a href="./index.html" class="logo logo__footer logo--font"><span class="logo--text">Web</span>Studio</a>
-        <address>
-        <ul class="list address footer-address">
-          <li class="footer-address__item"><a class="link footer-address__item--colorwhite" href="https://goo.gl/maps/XNxuDnSuaGoXyThm7" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-          <li class="footer-address__item"><a class=" link footer-address__item--colorgrey" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="link footer-address__item--colorgrey" href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
-        </address>
-      </div>
-      <div class="footer-social">
-        <p class="footer-social__title">ПРИСОЕДИНЯЙТЕСЬ</p>
-        <ul class="socialicons">
-          <li class="list socialicons--item">
-            <a href="" class="social-icons__link  social-icons__link--colorgrey" target="_blank" rel="noopener noreferrer">
-              <svg class="socialicons__svg  socialicons--brand-color">
-                <use class="" href="./img/icons/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="list socialicons--item">
-            <a href="" class="social-icons__link  social-icons__link--colorgrey" target="_blank" rel="noopener noreferrer">
-              <svg class="socialicons__svg  socialicons--brand-color">
-                <use class="" href="./img/icons/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="list socialicons--item">
-            <a href="" class="social-icons__link  social-icons__link--colorgrey" target="_blank" rel="noopener noreferrer">
-              <svg class="socialicons__svg  socialicons--brand-color">
-                <use class="" href="./img/icons/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="list socialicons--item">
-            <a href="" class="social-icons__link  social-icons__link--colorgrey" target="_blank" rel="noopener noreferrer">
-              <svg class="socialicons__svg  socialicons--brand-color">
-                <use class="" href="./img/icons/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-mailing">
-        <p class="footer-mailing__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-        <form name="#"  autocomplete="off" >
-          <label>
-            <input type="email" 
-            name="email" 
-            class="footer-mailing__input" 
-            placeholder="Email" />
-          </label>
-          <button type="submit" class="button footer-button--marginleft">
-            <span class="footer-button__send">
-              <span class="footer-button__text" >Подписаться</span>
-              <svg class="footer-button__icon">
-                <use class="" href="./img/icons/sprite-form.svg#icon-icon-send"></use>
-              </svg></span>
-          </button>
-        </form>
-      </div>
-    </div>
-  </footer>  -->
+      <footer class=" footer footer__darkbg">
+        <div class="container footer__flex">
+          <div>
+            <a href="./index.html" class="logo logo__footer logo--font"><span class="logo--text">Web</span>Studio</a>
+            <address>
+            <ul class="list address footer-address">
+              <li class="footer-address__item"><a class="link footer-address__item--colorwhite" href="https://goo.gl/maps/XNxuDnSuaGoXyThm7" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+              <li class="footer-address__item"><a class=" link footer-address__item--colorgrey" href="mailto:info@example.com">info@example.com</a></li>
+              <li><a class="link footer-address__item--colorgrey" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            </ul>
+            </address>
+          </div>
+          <div class="footer-social">
+            <p class="footer-social__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <ul class="socialicons">
+              <li class="list socialicons--item">
+                <a href="" class="social-icons__link  social-icons__link--colorgrey" target="_blank" rel="noopener noreferrer">
+                  <svg class="socialicons__svg  socialicons--brand-color">
+                    <use class="" href="./img/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list socialicons--item">
+                <a href="" class="social-icons__link  social-icons__link--colorgrey" target="_blank" rel="noopener noreferrer">
+                  <svg class="socialicons__svg  socialicons--brand-color">
+                    <use class="" href="./img/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list socialicons--item">
+                <a href="" class="social-icons__link  social-icons__link--colorgrey" target="_blank" rel="noopener noreferrer">
+                  <svg class="socialicons__svg  socialicons--brand-color">
+                    <use class="" href="./img/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list socialicons--item">
+                <a href="" class="social-icons__link  social-icons__link--colorgrey" target="_blank" rel="noopener noreferrer">
+                  <svg class="socialicons__svg  socialicons--brand-color">
+                    <use class="" href="./img/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-mailing">
+            <p class="footer-mailing__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+            <form name="#"  autocomplete="off" >
+              <label>
+                <input type="email" 
+                name="email" 
+                class="footer-mailing__input" 
+                placeholder="Email" />
+              </label>
+              <button type="submit" class="button footer-button--marginleft">
+                <span class="footer-button__send">
+                  <span class="footer-button__text" >Подписаться</span>
+                  <svg class="footer-button__icon">
+                    <use class="" href="./img/icons/sprite-form.svg#icon-icon-send"></use>
+                  </svg></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer> 
+          <!-- МобМенюХедер -->
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg class="mobil-menu__btn-close" width="19" height="19"></svg>
+            </button>
+            <div class="mobile-menu__contacts--down">
+              <ul class="mobile-menu">
+                <li><a href="index.html" class="mobile-menu__page"> Студия</a></li>
+                <li><a href="portfolio.html" class="mobile-menu__page">Портфолио</a></li>
+                <li><a href="" class="mobile-menu__page">Контакты</a></li>
+              </ul>
+              <div>
+                <ul class="mobile-menu">
+                  <li><a href="" class="mobile-menu__contact mobile-menu__contact--tel" href="tel:+380991111111">+38 096 111 11
+                      11</a></li>
+                  <li><a href="" class="mobile-menu__contact  mobile-menu__contact--mail"
+                      href="mailto:info@example.com">info@example.com</a></li>
+                </ul>
+                <ul class="mobile-menu mobile-menu__social">
+                  <li><a href="" class="mobile-menu__social-item" target="_blank" rel="noopener noreferrer">Instagram </a></li>
+                  <li class="mobile-menu__social--line"></li>
+                  <li><a href="" class="mobile-menu__social-item" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                  <li class="mobile-menu__social--line"></li>
+                  <li><a href="" class="mobile-menu__social-item" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                  <li class="mobile-menu__social--line"></li>
+                  <li><a href="" class="mobile-menu__social-item" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+                  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+                  crossorigin="anonymous"></script> -->
+          <script defer src="js/mobile_menu.js"></script>
 </body>
 </html>
