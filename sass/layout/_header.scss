@@ -24,7 +24,16 @@ header {
     display: inline-flex;
   }
 }
-
+.header__menu--tab {
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-top: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
 .header-icon--margin-right {
   margin-right: 10px;
 }
@@ -49,21 +58,30 @@ nav a.menu__link--active {
   color: var(--object-color);
 }
 .menu__link {
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
   display: flex;
   position: relative;
   align-items: center;
-  padding: 32px 0px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   padding: 32px 0px;
+  // }
 }
 .menu__item--grey-color {
   color: var(--grey-color);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
-// какой-то костыль,  можно использовать без нот
-// .menu__item:not(:last-child) {
-//   margin-right: 50px;
-// }
+
+.menu__item--tab:not(:last-child) {
+  margin-right: 50px;
+}
+
 .menu__underline::after {
   content: "";
   display: block;
@@ -73,4 +91,8 @@ nav a.menu__link--active {
   height: 4px;
   border-radius: 2px;
   background-color: var(--object-color);
+}
+.menu__link--tab {
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
