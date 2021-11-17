@@ -16,15 +16,19 @@
     <div class="container">
       <div class="header__navigation">
         <nav class="nav header__nav">
-            <a href="./index.html" class="logo header__logo logo--font"><span class="logo--text">Web</span>Studio</a>
+          <div class="logo">
+            <a href="./index.html" class=" header__logo logo--font"><span class="logo--text">Web</span>Studio</a>
+          </div>
+           <div class="header__menu">
             <ul class="list menu  header__menu--inline header__menu--nav">
-                <li class="menu__item menu__item--tab"><a class="link menu__link menu__link--tab  menu__underline menu__link--active" href="index.html">Студия</a></li>
-                <li class="menu__item menu__item--tab"><a class="link menu__link menu__link--tab" href="portfolio.html">Портфолио</a></li>
-                <li class="menu__item menu__item--tab"><a class="link menu__link menu__link--tab" href="">Контакты</a></li>
+             <li class="menu__item menu__item--tab"><a class="link menu__link menu__link--tab  menu__underline menu__link--active" href="index.html">Студия</a></li>
+             <li class="menu__item menu__item--tab"><a class="link menu__link menu__link--tab" href="portfolio.html">Портфолио</a></li>
+             <li class="menu__item menu__item--tab"><a class="link menu__link menu__link--tab" href="">Контакты</a></li>
             </ul>
+          </div>
         </nav>   
       </div>      
-      <div class="header__contacts header__contacts--tab ">
+      <div class="header__contacts">
           <ul class="list menu header__menu--inline header__menu--tab ">
               <li class="menu__item">
                 <a class="link menu__link  menu__item--grey-color" href="">
@@ -46,7 +50,7 @@
   </header> 
     <main>
       <section>
-        <div class="container"> <!-- добавил для адаптива -->
+        <!-- <div class="container"> добавил для адаптива -->
           <div class="hero hero__darkbg hero__imgbg hero__section">       
             <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button type="button" class="button hero__button " data-modal-open>Заказать услугу</button>
@@ -371,15 +375,15 @@
         <div class="footer-mailing">
           <p class="footer-mailing__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
           <form class="footer-mailing__form" name="#"  autocomplete="off" >
-          <div>
+            <div class="footer-mailing--email">
             <label>
               <input type="email" 
               name="email" 
               class="footer-mailing__input" 
               placeholder="Email" />
             </label>
-          </div>
-          <div>
+            </div>
+            <div>
             <button type="submit" class="button footer-button--marginleft">
               <span class="footer-button__send">
                 <span class="footer-button__text" >Подписаться</span>
@@ -387,7 +391,7 @@
                   <use class="" href="./img/icons/sprite-form.svg#icon-icon-send"></use>
                 </svg></span>
             </button>
-          </div>
+            </div>
           </form>
         </div>
       </div>

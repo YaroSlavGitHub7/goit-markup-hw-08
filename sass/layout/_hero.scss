@@ -1,8 +1,11 @@
 .hero {
   &__darkbg {
     background: var(--dark-bg);
-    width: 100%;
-    margin: auto;
+    // без змін
+    // width: 100%;
+    // margin: auto;
+
+    // width: 1600px;
   }
   &__imgbg {
     background-image: linear-gradient(
@@ -14,11 +17,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    // mobil
-    margin: 0 auto;
-    background-size: cover;
-
     max-width: 1600px;
+
+    // mobil
+    // margin: 0 auto;
+    background-size: cover;
   }
   &__section {
     display: flex;
