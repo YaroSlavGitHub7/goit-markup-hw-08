@@ -1,9 +1,17 @@
 .menu-button {
-  // mobil
-  margin-bottom: 40px;
-
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 480px) {
+    // mobil
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 
   // margin-bottom: 50px;
   // justify-content: center;
@@ -47,27 +55,47 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 3 * 30px) / 3);
-  // mobil
 
-  // margin-left: -30px;
-  // margin-top: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 .portfolio-cards {
   display: flex;
-  // mobil
-  width: 100%;
-  justify-content: center;
-  // margin-left: 30px;
-  // margin-top: 30px;
-  // width: 368px;
   padding-top: 0 px;
   background: var(--brand-color);
+
+  @media screen and (min-width: 480px) {
+    // mobil
+    width: 100%;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+
+    width: 354px;
+    height: 440px;
+    // margin-left: 30px;
+    margin-top: 30px;
+  }
+  // width: 368px;
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 404px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .portfolio-cards--link {
   // mobil
-  width: 100%;
+  // width: 100%;
   justify-content: center;
 
   position: relative;
