@@ -852,9 +852,26 @@ nav a.menu__link--active {
 
 /* элемент card-set работает только после блока client, иначе свойство flex не применяется*/
 .menu-button {
-  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 480px) {
+  .menu-button {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-button {
+    margin-bottom: 50px;
+  }
 }
 
 .menu-button--marginRight {
@@ -896,19 +913,36 @@ nav a.menu__link--active {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 3 * 30px) / 3);
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    margin: -15px;
+  }
 }
 
 .portfolio-cards {
   display: flex;
-  width: 100%;
-  justify-content: center;
   padding-top: 0 px;
   background: var(--brand-color);
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-cards {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    width: 354px;
+    height: 404px;
+    margin: 15px;
+  }
 }
 
 .portfolio-cards--link {
   width: 100%;
+  height: auto;
   justify-content: center;
   position: relative;
   transition-duration: 250ms;
