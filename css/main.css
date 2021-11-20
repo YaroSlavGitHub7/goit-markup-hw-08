@@ -914,35 +914,17 @@ nav a.menu__link--active {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .cards {
-    margin: -15px;
-  }
 }
 
 .portfolio-cards {
   display: flex;
-  padding-top: 0 px;
   background: var(--brand-color);
   width: 100%;
-  height: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio-cards {
-    flex-basis: calc((100% - 2 * 30px) / 2);
-    width: 354px;
-    height: 404px;
-    margin: 15px;
-  }
+  height: 404px;
 }
 
 .portfolio-cards--link {
   width: 100%;
-  height: auto;
   justify-content: center;
   position: relative;
   transition-duration: 250ms;
@@ -955,13 +937,17 @@ nav a.menu__link--active {
 }
 
 .portfolio-cards__item {
-  display: block;
+  display: flex;
   position: relative;
   overflow: hidden;
+  height: 294px;
   margin-bottom: -1px;
+}
+
+.card-img {
   background-repeat: no-repeat;
-  background-position: center;
   background-size: auto;
+  background-position: center;
 }
 
 .portfolio-cards__overlay {
@@ -1005,6 +991,7 @@ nav a.menu__link--active {
 }
 
 .portfolio-cards__content {
+  height: 100%;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
