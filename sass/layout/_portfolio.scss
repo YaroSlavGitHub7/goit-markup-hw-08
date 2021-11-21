@@ -12,12 +12,8 @@
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
-
-  // margin-bottom: 50px;
-  // justify-content: center;
 }
 
-// mobil
 .menu-button--marginRight {
   margin-top: 15px;
 }
@@ -55,24 +51,21 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  // width: 100%;
   //   height: auto;
 
   //   @media screen and (min-width: 768px) {
   //     // tab
   //     margin: -15px;
   //   }
-
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 3 * 30px) / 3);
-  }
 }
 
 .portfolio-cards {
   display: flex;
   padding-top: 0 px;
   background: var(--brand-color);
-  width: 100%;
+  justify-content: center;
+  // width: 100%;
 
   @media screen and (min-width: 480px) {
     // mobil
@@ -87,8 +80,8 @@
     height: 440px;
     margin: 15px;
   }
-  // // width: 368px;
   @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
     width: 370px;
     height: 404px;
     margin-left: 30px;
@@ -97,20 +90,22 @@
 }
 
 .portfolio-cards--link {
+  display: block;
   width: 100%;
-  //   height: auto;
-  //   // @media screen and (min-width: 480px) {
-  //   //   width: 100%;
-  //   //   height: auto;
-  //   // }
-  //   // @media screen and (min-width: 768px) {
-  //   //   width: 354px;
-  //   //   height: 404px;
-  //   // }
-  //   // @media screen and (min-width: 768px) {
-  //   //   width: 370px;
-  //   //   height: 404px;
-  //   // }
+  height: auto;
+  // margin: auto;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 440px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 404px;
+  }
 
   justify-content: center;
   position: relative;
@@ -128,32 +123,22 @@
   display: flex;
   position: relative;
   overflow: hidden;
-  height: 294px;
-  // width: auto;
+  height: auto;
+  width: 100%;
   margin-bottom: -1px;
 
-  //   // @media screen and (min-width: 480px) {
-  //   //   width: 100%;
-  //   //   height: auto;
-  //   // }
-  //   // @media screen and (min-width: 768px) {
-  //   //   width: 354px;
-  //   //   height: 404px;
-  //   // }
-  //   // @media screen and (min-width: 768px) {
-  //   //   width: 370px;
-  //   //   height: 404px;
-  //   // }
-
-  //   // mobil
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .card-img {
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    height: 294px;
+    max-width: 450px;
+    // width: auto;
+    // background-size: cover;
+  }
 }
 
 .portfolio-cards__overlay {
@@ -199,7 +184,9 @@
 }
 
 .portfolio-cards__content {
-  height: 100%;
+  @media screen and (min-width: 480px) {
+    height: 110px;
+  }
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
