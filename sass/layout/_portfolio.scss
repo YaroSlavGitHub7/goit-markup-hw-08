@@ -51,21 +51,18 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  // width: 100%;
-  //   height: auto;
 
-  //   @media screen and (min-width: 768px) {
-  //     // tab
-  //     margin: -15px;
-  //   }
+  @media screen and (min-width: 768px) {
+    // tab
+    margin: -15px;
+  }
 }
 
 .portfolio-cards {
-  // display: flex;
+  display: flex;
   padding-top: 0px;
   background: var(--brand-color);
   justify-content: center;
-  // width: 100%;
   @media screen and (max-width: 480px) {
     margin: auto;
   }
@@ -85,19 +82,14 @@
     flex-basis: calc((100% - 3 * 30px) / 3);
     width: 370px;
     height: 404px;
-    margin-left: 30px;
-    margin-top: 30px;
   }
 }
 
 .portfolio-cards--link {
   display: block;
-  // width: 100%;
-  // height: auto;
-  // margin: auto;
   @media screen and (min-width: 480px) {
-    // width: 100%;
-    // height: auto;
+    width: 100%;
+    height: auto;
   }
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -121,34 +113,34 @@
 }
 
 .portfolio-cards__item {
-  display: flex;
   position: relative;
   overflow: hidden;
-  // height: auto;
-  // width: 100%;
   margin-bottom: -1px;
   @media screen and (min-width: 480px) {
-    // display: flex;
     display: block;
     height: 294px;
     max-width: 450px;
   }
+  @media screen and (min-width: 786px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.card-img {
-  // @media screen and (min-width: 480px) {
-  // display: flex;
-  // display: block;
-  // height: 294px;
-  // max-width: 450px;
-  // width: auto;
-  background-position: center;
-
-  background-size: cover;
-  // }
-}
+// .card-img {
+// @media screen and (min-width: 480px) {
+// height: 294px;
+// max-width: 450px;
+// width: auto;
+// background-position: center;
+// background-size: cover;
+// }
+// }
 
 .portfolio-cards__overlay {
   opacity: 0;
@@ -196,40 +188,13 @@
   @media screen and (min-width: 480px) {
     height: 110px;
   }
+  @media screen and (min-width: 768px) {
+    height: 146px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 110px;
+  }
+
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-
-// .cards {
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-basis: calc((100% - 3 * 30px) / 3);
-//   margin-left: -30px;
-//   margin-top: -30px;
-// }
-// .portfolio-cards {
-//   display: flex;
-//   margin-left: 30px;
-//   margin-top: 30px;
-//   padding-top: 0 px;
-//   background: var(--brand-color);
-//   width: 368px;
-// }
-
-// .portfolio-cards--link {
-//   position: relative;
-//   transition-duration: 250ms;
-//   transition-property: box-shadow;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   &:hover,
-//   &:focus {
-//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-//       1px 4px 6px rgba(0, 0, 0, 0.16);
-//   }
-// }
-// .portfolio-cards__item {
-//   display: block;
-//   position: relative;
-//   overflow: hidden;
-//   margin-bottom: -1px;
-// }

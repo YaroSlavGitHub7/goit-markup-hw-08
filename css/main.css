@@ -479,11 +479,22 @@ nav a.menu__link--active {
 }
 
 .hero__imgbg {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main_bg_mobOpt.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__imgbg {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main_bg_mob@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero__imgbg {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main_bg_mob@2x.jpg);
+  }
 }
 
 .hero__section {
@@ -908,7 +919,14 @@ nav a.menu__link--active {
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .cards {
+    margin: -15px;
+  }
+}
+
 .portfolio-cards {
+  display: flex;
   padding-top: 0px;
   background: var(--brand-color);
   justify-content: center;
@@ -941,8 +959,6 @@ nav a.menu__link--active {
     flex-basis: calc((100% - 3 * 30px) / 3);
     width: 370px;
     height: 404px;
-    margin-left: 30px;
-    margin-top: 30px;
   }
 }
 
@@ -953,6 +969,13 @@ nav a.menu__link--active {
   transition-duration: 250ms;
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-cards--link {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -974,7 +997,6 @@ nav a.menu__link--active {
 }
 
 .portfolio-cards__item {
-  display: flex;
   position: relative;
   overflow: hidden;
   margin-bottom: -1px;
@@ -991,9 +1013,16 @@ nav a.menu__link--active {
   }
 }
 
-.card-img {
-  background-position: center;
-  background-size: cover;
+@media screen and (min-width: 786px) {
+  .portfolio-cards__item {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-cards__item {
+    display: flex;
+  }
 }
 
 .portfolio-cards__overlay {
@@ -1042,6 +1071,18 @@ nav a.menu__link--active {
 }
 
 @media screen and (min-width: 480px) {
+  .portfolio-cards__content {
+    height: 110px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-cards__content {
+    height: 146px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .portfolio-cards__content {
     height: 110px;
   }

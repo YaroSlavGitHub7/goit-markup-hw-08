@@ -4,12 +4,24 @@
   }
 
   &__imgbg {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/main_bg_mobOpt.jpg);
+    @media screen and (min-width: 480px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/main_bg_mob@1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../img/main_bg_mob@2x.jpg);
+      }
+    }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
