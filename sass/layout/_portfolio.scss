@@ -61,18 +61,19 @@
 }
 
 .portfolio-cards {
-  display: flex;
-  padding-top: 0 px;
+  // display: flex;
+  padding-top: 0px;
   background: var(--brand-color);
   justify-content: center;
   // width: 100%;
-
+  @media screen and (max-width: 480px) {
+    margin: auto;
+  }
   @media screen and (min-width: 480px) {
     // mobil
     margin-bottom: 30px;
     width: 450px;
-    height: 404px;
-    justify-content: center;
+    // height: 404px;
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
@@ -91,12 +92,12 @@
 
 .portfolio-cards--link {
   display: block;
-  width: 100%;
-  height: auto;
+  // width: 100%;
+  // height: auto;
   // margin: auto;
   @media screen and (min-width: 480px) {
-    width: 100%;
-    height: auto;
+    // width: 100%;
+    // height: auto;
   }
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -123,22 +124,30 @@
   display: flex;
   position: relative;
   overflow: hidden;
-  height: auto;
-  width: 100%;
+  // height: auto;
+  // width: 100%;
   margin-bottom: -1px;
-
+  @media screen and (min-width: 480px) {
+    // display: flex;
+    display: block;
+    height: 294px;
+    max-width: 450px;
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .card-img {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    height: 294px;
-    max-width: 450px;
-    // width: auto;
-    // background-size: cover;
-  }
+  // @media screen and (min-width: 480px) {
+  // display: flex;
+  // display: block;
+  // height: 294px;
+  // max-width: 450px;
+  // width: auto;
+  background-position: center;
+
+  background-size: cover;
+  // }
 }
 
 .portfolio-cards__overlay {

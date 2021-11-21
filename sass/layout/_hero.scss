@@ -1,12 +1,8 @@
 .hero {
   &__darkbg {
     background: var(--dark-bg);
-    // без змін
-    // width: 100%;
-    // margin: auto;
-
-    // width: 1600px;
   }
+
   &__imgbg {
     background-image: linear-gradient(
         to right,
@@ -16,12 +12,8 @@
       url(../img/main_bg_mobOpt.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
-    max-width: 1600px;
-
-    // mobil
-    // margin: 0 auto;
     background-size: cover;
+    max-width: 1600px;
   }
   &__section {
     display: flex;

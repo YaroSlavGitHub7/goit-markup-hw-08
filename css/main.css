@@ -482,9 +482,8 @@ nav a.menu__link--active {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main_bg_mobOpt.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
-  max-width: 1600px;
   background-size: cover;
+  max-width: 1600px;
 }
 
 .hero__section {
@@ -910,18 +909,21 @@ nav a.menu__link--active {
 }
 
 .portfolio-cards {
-  display: flex;
-  padding-top: 0 px;
+  padding-top: 0px;
   background: var(--brand-color);
   justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio-cards {
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 480px) {
   .portfolio-cards {
     margin-bottom: 30px;
     width: 450px;
-    height: 404px;
-    justify-content: center;
   }
 }
 
@@ -946,20 +948,11 @@ nav a.menu__link--active {
 
 .portfolio-cards--link {
   display: block;
-  width: 100%;
-  height: auto;
   justify-content: center;
   position: relative;
   transition-duration: 250ms;
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px) {
-  .portfolio-cards--link {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -984,8 +977,6 @@ nav a.menu__link--active {
   display: flex;
   position: relative;
   overflow: hidden;
-  height: auto;
-  width: 100%;
   margin-bottom: -1px;
   background-repeat: no-repeat;
   background-position: center;
@@ -993,11 +984,16 @@ nav a.menu__link--active {
 }
 
 @media screen and (min-width: 480px) {
-  .card-img {
-    display: flex;
+  .portfolio-cards__item {
+    display: block;
     height: 294px;
     max-width: 450px;
   }
+}
+
+.card-img {
+  background-position: center;
+  background-size: cover;
 }
 
 .portfolio-cards__overlay {
